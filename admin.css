@@ -1,0 +1,87 @@
+/* ==========================================================
+   Estilos de la página de "gracias" y de la administración (CRUD de mensajes).
+   Archivo NUEVO: no modifica estilos.css ni los demás. Misma paleta del diseño.
+   ========================================================== */
+
+/* ---------- Gracias / errores ---------- */
+.gracias {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 28px;
+  text-align: center;
+  background: linear-gradient(110deg, #101426, #170b2d);
+  border: 1px solid #24283a;
+  border-radius: 18px;
+}
+.gracias h1 { margin-top: 4px; }
+.gracias p { color: #c3c5d0; line-height: 1.6; margin-bottom: 24px; }
+.gracias .boton { margin: 4px; }
+
+/* ---------- Avisos y errores ---------- */
+.aviso {
+  background: #103b3a;
+  border: 1px solid #1f6e6b;
+  color: #d6fffb;
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+.aviso-error { background: #4a1230; border-color: #a3225f; color: #ffd6e8; }
+.errores { margin: 14px 0 22px 20px; line-height: 1.8; color: #ffd6e8; text-align: left; }
+.aviso .errores { margin: 0 0 0 18px; }
+
+/* ---------- Acceso ---------- */
+.acceso { max-width: 460px; margin-left: auto; margin-right: auto; }
+.acceso .formulario { height: auto; }
+
+/* ---------- Buscador y tabla ---------- */
+.busqueda { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 12px; }
+.busqueda input {
+  flex: 1 1 240px;
+  background: #101421;
+  border: 1px solid #33394b;
+  border-radius: 8px;
+  color: white;
+  color-scheme: dark;
+  font: inherit;
+  font-size: 14px;
+  padding: 12px 14px;
+}
+.busqueda input:focus {
+  outline: none;
+  border-color: #bd58ff;
+  box-shadow: 0 0 0 3px rgba(189, 88, 255, .25);
+}
+.conteo { color: #aeb3c2; font-size: 13px; margin-bottom: 12px; }
+.vacio { padding: 30px; text-align: center; color: #aeb3c2; background: #151a29; border-radius: 15px; }
+
+.tabla-scroll {
+  overflow-x: auto;
+  background: #151a29;
+  border: 1px solid #252b3c;
+  border-radius: 15px;
+}
+.tabla { width: 100%; min-width: 820px; border-collapse: collapse; font-size: 14px; }
+.tabla th,
+.tabla td { padding: 12px 14px; text-align: left; vertical-align: top; border-bottom: 1px solid #252b3c; }
+.tabla th {
+  background: #101421;
+  color: #e7b4ff;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.tabla tr:last-child td { border-bottom: 0; }
+.tabla td small { display: block; color: #aeb3c2; font-size: 12px; }
+.tabla .acciones { display: flex; align-items: center; gap: 8px; white-space: nowrap; }
+.tabla .acciones form { margin: 0; }
+.mini { padding: 8px 12px; font-size: 13px; }
+
+/* ---------- Formulario de edición: separación de los dos botones ---------- */
+#editar .formulario .boton { text-align: center; }
+
+@media (max-width: 750px) {
+  .gracias { padding: 30px 18px; }
+}
