@@ -1,11 +1,4 @@
--- ============================================================
--- Base de datos de Crescendo (MySQL / MariaDB)
--- 5 tablas: categorias, productos, testimonios, beneficios, mensajes
---
--- XAMPP: en phpMyAdmin, pestaña "Importar" y elige este archivo.
--- IONOS: la base ya la creas en el panel con su propio nombre;
---        borra las 2 líneas de CREATE DATABASE y USE antes de importar.
--- ============================================================
+
 
 SET NAMES utf8mb4;
 
