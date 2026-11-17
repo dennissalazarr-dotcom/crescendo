@@ -3,6 +3,6 @@
 return [
     'host'    => 'localhost',
     'base'    => 'nombre_de_la_base',
-    'usuario' => 'usuario',
-    'clave'   => 'contrasena',
+    'usuario' => 'sebastian',
+    'clave'   => '0025777S.s',
 ];
